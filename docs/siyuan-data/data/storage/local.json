@@ -1,0 +1,118 @@
+{
+  "local-closed-tabs": [
+    {
+      "activeTime": "1783181157296",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20200923234011-ieuun1p",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-6v0mkxr",
+        "rootId": "20200923234011-ieuun1p"
+      },
+      "docIcon": "1f389",
+      "instance": "Tab",
+      "pin": false,
+      "title": "Please Start Here"
+    }
+  ],
+  "local-fileposition": {
+    "20200923234011-ieuun1p": {
+      "endId": "20260614115050-7gcj2yx",
+      "rootId": "20200923234011-ieuun1p",
+      "scrollTop": 0,
+      "startId": "20251209212043-iea22ml"
+    }
+  },
+  "local-filespaths": [
+    {
+      "notebookId": "20260705000651-5r7iwb4",
+      "openPaths": [
+        "/20260704130658-exvodjj.sy"
+      ]
+    }
+  ],
+  "local-searchdata": {
+    "group": 0,
+    "hPath": "",
+    "hasReplace": false,
+    "idPath": [],
+    "k": "",
+    "method": 0,
+    "page": 1,
+    "query": "",
+    "r": "",
+    "removed": true,
+    "replaceTypes": {
+      "aHref": true,
+      "aText": true,
+      "aTitle": true,
+      "blockRef": true,
+      "code": true,
+      "codeBlock": true,
+      "docTitle": true,
+      "em": true,
+      "fileAnnotationRef": true,
+      "htmlBlock": true,
+      "imgSrc": true,
+      "imgText": true,
+      "imgTitle": true,
+      "inlineMath": true,
+      "inlineMemo": true,
+      "kbd": true,
+      "mark": true,
+      "mathBlock": true,
+      "s": true,
+      "strong": true,
+      "sub": true,
+      "sup": true,
+      "tag": true,
+      "text": true,
+      "u": true
+    },
+    "sort": 0,
+    "subTypes": {
+      "h1": false,
+      "h2": false,
+      "h3": false,
+      "h4": false,
+      "h5": false,
+      "h6": false,
+      "o": false,
+      "t": false,
+      "u": false
+    },
+    "types": {
+      "audioBlock": false,
+      "blockquote": false,
+      "callout": false,
+      "codeBlock": true,
+      "databaseBlock": true,
+      "document": true,
+      "embedBlock": false,
+      "heading": true,
+      "htmlBlock": true,
+      "iframeBlock": false,
+      "list": false,
+      "listItem": false,
+      "mathBlock": true,
+      "paragraph": true,
+      "superBlock": false,
+      "table": true,
+      "videoBlock": false,
+      "widgetBlock": false
+    }
+  },
+  "local-searchkeys": {
+    "col": "",
+    "colTab": "",
+    "keys": [
+      ""
+    ],
+    "layout": 0,
+    "layoutTab": 0,
+    "replaceKeys": [],
+    "row": "",
+    "rowTab": ""
+  }
+}

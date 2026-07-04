@@ -1,0 +1,10 @@
+services:
+  siyuan:
+    image: b3log/siyuan:latest
+    container_name: siyuan
+    command: serve --workspace=/siyuan/workspace/ --port=6806 --accessAuthCode=changeme --lang=en-US
+    ports:
+      - "6806:6806"
+    volumes:
+      - ./siyuan-data:/siyuan/workspace
+    restart: "no"

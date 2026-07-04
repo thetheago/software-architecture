@@ -1,0 +1,135 @@
+I 2026/07/05 00:01:49 working.go:202: 
+      ___                                   ___           ___           ___
+     /  /\        ___           ___        /__/\         /  /\         /__/\
+    /  /:/_      /  /\         /__/|       \  \:\       /  /::\        \  \:\
+   /  /:/ /\    /  /:/        |  |:|        \  \:\     /  /:/\:\        \  \:\
+  /  /:/ /::\  /__/::\        |  |:|    ___  \  \:\   /  /:/~/::\   _____\__\:\
+ /__/:/ /:/\:\ \__\/\:\__   __|__|:|   /__/\  \__\:\ /__/:/ /:/\:\ /__/::::::::\
+ \  \:\/:/~/:/    \  \:\/\ /__/::::\   \  \:\ /  /:/ \  \:\/:/__\/ \  \:\~~\~~\/
+  \  \::/ /:/      \__\::/    ~\~~\:\   \  \:\  /:/   \  \::/       \  \:\  ~~~
+   \__\/ /:/       /__/:/       \  \:\   \  \:\/:/     \  \:\        \  \:\
+     /__/:/        \__\/         \__\/    \  \::/       \  \:\        \  \:\
+     \__\/                                 \__\/         \__\/         \__\/
+I 2026/07/05 00:01:49 runtime.go:100: kernel is booting:
+    * ver [3.7.1]
+    * arch [amd64]
+    * os [alpine]
+    * pid [1]
+    * runtime mode [prod]
+    * working directory [/opt/siyuan]
+    * read only [false]
+    * container [docker]
+    * database [ver=202607031200]
+    * workspace directory [/siyuan/workspace]
+I 2026/07/05 00:01:49 conf.go:161: initialized the specified language [pt-BR]
+I 2026/07/05 00:01:49 runtime.go:225: use network proxy [system]
+I 2026/07/05 00:01:49 cert.go:54: generating local CA for TLS...
+I 2026/07/05 00:01:49 cert.go:75: generating TLS server certificates signed by local CA...
+I 2026/07/05 00:01:49 cert.go:81: generated TLS certificates at [/siyuan/workspace/conf]
+I 2026/07/05 00:01:49 serve.go:234: kernel [pid=1] http server [0.0.0.0:6806] is booting (local HTTPS + HTTP/2 enabled)
+I 2026/07/05 00:01:49 blocktree.go:80: reinitialized database [/siyuan/workspace/temp/blocktree.db]
+I 2026/07/05 00:01:49 database.go:103: the database structure is changed, rebuilding database...
+I 2026/07/05 00:01:49 blocktree.go:80: reinitialized database [/siyuan/workspace/temp/blocktree.db]
+I 2026/07/05 00:01:49 database.go:117: reinitialized database [/siyuan/workspace/temp/siyuan.db]
+I 2026/07/05 00:01:49 conf.go:1113: tree/block count [0/0]
+I 2026/07/05 00:01:49 working.go:265: kernel booted
+I 2026/07/05 00:01:49 manager.go:154: kernel plugins are disabled by configuration, skipping start
+I 2026/07/05 00:01:49 box.go:77: auto stat [trees=0, blocks=0, dataSize=36.87 kB, assetsSize=0 B]
+I 2026/07/05 00:01:53 cron.go:66: cron job [[RefreshRhyResultJob]] executed
+I 2026/07/05 00:04:18 working.go:202: 
+      ___                                   ___           ___           ___
+     /  /\        ___           ___        /__/\         /  /\         /__/\
+    /  /:/_      /  /\         /__/|       \  \:\       /  /::\        \  \:\
+   /  /:/ /\    /  /:/        |  |:|        \  \:\     /  /:/\:\        \  \:\
+  /  /:/ /::\  /__/::\        |  |:|    ___  \  \:\   /  /:/~/::\   _____\__\:\
+ /__/:/ /:/\:\ \__\/\:\__   __|__|:|   /__/\  \__\:\ /__/:/ /:/\:\ /__/::::::::\
+ \  \:\/:/~/:/    \  \:\/\ /__/::::\   \  \:\ /  /:/ \  \:\/:/__\/ \  \:\~~\~~\/
+  \  \::/ /:/      \__\::/    ~\~~\:\   \  \:\  /:/   \  \::/       \  \:\  ~~~
+   \__\/ /:/       /__/:/       \  \:\   \  \:\/:/     \  \:\        \  \:\
+     /__/:/        \__\/         \__\/    \  \::/       \  \:\        \  \:\
+     \__\/                                 \__\/         \__\/         \__\/
+I 2026/07/05 00:04:18 runtime.go:100: kernel is booting:
+    * ver [3.7.1]
+    * arch [amd64]
+    * os [alpine]
+    * pid [1]
+    * runtime mode [prod]
+    * working directory [/opt/siyuan]
+    * read only [false]
+    * container [docker]
+    * database [ver=202607031200]
+    * workspace directory [/siyuan/workspace]
+I 2026/07/05 00:04:18 conf.go:137: loaded conf [/siyuan/workspace/conf/conf.json]
+I 2026/07/05 00:04:18 conf.go:161: initialized the specified language [pt-BR]
+I 2026/07/05 00:04:18 runtime.go:225: use network proxy [system]
+I 2026/07/05 00:04:18 cert.go:122: certificate missing current IP address [172.25.0.2], will regenerate
+I 2026/07/05 00:04:18 cert.go:66: existing TLS certificates are invalid or expired, regenerating...
+I 2026/07/05 00:04:18 cert.go:75: generating TLS server certificates signed by local CA...
+I 2026/07/05 00:04:18 cert.go:81: generated TLS certificates at [/siyuan/workspace/conf]
+I 2026/07/05 00:04:18 serve.go:234: kernel [pid=1] http server [0.0.0.0:6806] is booting (local HTTPS + HTTP/2 enabled)
+I 2026/07/05 00:04:18 working.go:658: database [/siyuan/workspace/temp/siyuan.db] size [4.1 kB]
+I 2026/07/05 00:04:18 working.go:658: database [/siyuan/workspace/temp/blocktree.db] size [4.1 kB]
+I 2026/07/05 00:04:18 working.go:658: database [/siyuan/workspace/temp/history.db] size [4.1 kB]
+I 2026/07/05 00:04:18 working.go:658: database [/siyuan/workspace/temp/asset_content.db] size [4.1 kB]
+I 2026/07/05 00:04:18 conf.go:1113: tree/block count [0/0]
+I 2026/07/05 00:04:18 working.go:265: kernel booted
+I 2026/07/05 00:04:18 manager.go:154: kernel plugins are disabled by configuration, skipping start
+I 2026/07/05 00:04:18 box.go:77: auto stat [trees=0, blocks=0, dataSize=36.87 kB, assetsSize=0 B]
+I 2026/07/05 00:04:20 cron.go:66: cron job [[RefreshRhyResultJob]] executed
+I 2026/07/05 00:04:53 session.go:153: auth success [ip=172.25.0.1:42220, maxAge=2592000]
+I 2026/07/05 00:04:53 serve.go:450: serving [/] for user-agent [Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36]
+I 2026/07/05 00:04:54 index.go:221: rebuilt database for notebook [20210808180117-6v0mkxr] in [0.06s], tree [count=73, size=1.96 MB]
+I 2026/07/05 00:04:54 index.go:290: resolved refs [37] in [34ms]
+E 2026/07/05 00:04:54 av.go:458: parse attribute view [20251230141929-2trv0vl] failed: view not found
+I 2026/07/05 00:06:03 font.go:54: loaded system fonts [0] in [0ms]
+I 2026/07/05 00:06:03 font.go:54: loaded system fonts [0] in [0ms]
+I 2026/07/05 00:06:51 mount.go:83: created box [20260705000651-5r7iwb4]
+I 2026/07/05 00:07:26 process.go:36: received os signal [terminated], exit kernel process now
+I 2026/07/05 00:07:26 conf.go:819: exiting kernel [force=false, setCurrentWorkspace=true, execInstallPkg=1]
+I 2026/07/05 00:07:26 manager.go:192: kernel plugin manager is already stopped, skipping stop
+D 2026/07/05 00:07:26 mount.go:169: removed av file [/siyuan/workspace/data/storage/av/20240208172719-6qv16cr.json]
+D 2026/07/05 00:07:26 mount.go:169: removed av file [/siyuan/workspace/data/storage/av/20240208172742-57vwxqw.json]
+D 2026/07/05 00:07:26 mount.go:169: removed av file [/siyuan/workspace/data/storage/av/20240208173528-oq4elsj.json]
+I 2026/07/05 00:07:26 mount.go:177: removed box [20210808180117-6v0mkxr]
+I 2026/07/05 00:07:26 conf.go:1380: closed user guide box [20210808180117-6v0mkxr]
+I 2026/07/05 00:07:26 database.go:1381: closed database
+I 2026/07/05 00:07:26 conf.go:1306: cleared workspace temp
+I 2026/07/05 00:07:27 sync.go:866: sync websocket closed
+I 2026/07/05 00:07:49 working.go:202: 
+      ___                                   ___           ___           ___
+     /  /\        ___           ___        /__/\         /  /\         /__/\
+    /  /:/_      /  /\         /__/|       \  \:\       /  /::\        \  \:\
+   /  /:/ /\    /  /:/        |  |:|        \  \:\     /  /:/\:\        \  \:\
+  /  /:/ /::\  /__/::\        |  |:|    ___  \  \:\   /  /:/~/::\   _____\__\:\
+ /__/:/ /:/\:\ \__\/\:\__   __|__|:|   /__/\  \__\:\ /__/:/ /:/\:\ /__/::::::::\
+ \  \:\/:/~/:/    \  \:\/\ /__/::::\   \  \:\ /  /:/ \  \:\/:/__\/ \  \:\~~\~~\/
+  \  \::/ /:/      \__\::/    ~\~~\:\   \  \:\  /:/   \  \::/       \  \:\  ~~~
+   \__\/ /:/       /__/:/       \  \:\   \  \:\/:/     \  \:\        \  \:\
+     /__/:/        \__\/         \__\/    \  \::/       \  \:\        \  \:\
+     \__\/                                 \__\/         \__\/         \__\/
+I 2026/07/05 00:07:49 runtime.go:100: kernel is booting:
+    * ver [3.7.1]
+    * arch [amd64]
+    * os [alpine]
+    * pid [1]
+    * runtime mode [prod]
+    * working directory [/opt/siyuan]
+    * read only [false]
+    * container [docker]
+    * database [ver=202607031200]
+    * workspace directory [/siyuan/workspace]
+I 2026/07/05 00:07:49 conf.go:137: loaded conf [/siyuan/workspace/conf/conf.json]
+I 2026/07/05 00:07:49 conf.go:161: initialized the specified language [en-US]
+I 2026/07/05 00:07:49 runtime.go:225: use network proxy [system]
+I 2026/07/05 00:07:49 cert.go:63: using existing TLS certificates from [/siyuan/workspace/conf]
+I 2026/07/05 00:07:49 serve.go:234: kernel [pid=1] http server [0.0.0.0:6806] is booting (local HTTPS + HTTP/2 enabled)
+I 2026/07/05 00:07:49 working.go:658: database [/siyuan/workspace/temp/siyuan.db] size [5.4 MB]
+I 2026/07/05 00:07:49 working.go:658: database [/siyuan/workspace/temp/blocktree.db] size [1.05 MB]
+I 2026/07/05 00:07:49 working.go:658: database [/siyuan/workspace/temp/history.db] size [4.1 kB]
+I 2026/07/05 00:07:49 working.go:658: database [/siyuan/workspace/temp/asset_content.db] size [4.1 kB]
+I 2026/07/05 00:07:49 conf.go:1113: tree/block count [1/2]
+I 2026/07/05 00:07:49 working.go:265: kernel booted
+I 2026/07/05 00:07:49 manager.go:154: kernel plugins are disabled by configuration, skipping start
+I 2026/07/05 00:07:49 box.go:77: auto stat [trees=1, blocks=2, dataSize=56.83 kB, assetsSize=0 B]
+I 2026/07/05 00:07:52 cron.go:66: cron job [[RefreshRhyResultJob]] executed
+I 2026/07/05 00:08:04 serve.go:450: serving [/] for user-agent [Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36]
