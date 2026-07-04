@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Status</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <!-- ===== Top bar ===== -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="brand">
+        <span class="brand__dot"></span>
+        <span class="brand__name">Acme Status</span>
+      </div>
+      <nav class="topbar__nav">
+        <a href="#components">Components</a>
+        <a href="#incidents">Incidents</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">◑</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== Banner de status geral ===== -->
+    <!-- data-status controla a cor: operational | degraded | partial | major | maintenance -->
+    <section id="overall" class="banner" data-status="operational">
+      <div class="banner__icon" aria-hidden="true">✓</div>
+      <div class="banner__text">
+        <h1 class="banner__title">All Systems Operational</h1>
+        <p class="banner__subtitle">
+          Atualizado em tempo real
+          <span id="live-badge" class="live-badge" data-state="connecting">
+            <span class="live-badge__dot"></span>
+            <span id="live-label">conectando…</span>
+          </span>
+        </p>
+      </div>
+      <div class="banner__updated">
+        <span class="muted">Última atualização</span>
+        <time id="last-updated" datetime="">—</time>
+      </div>
+    </section>
+
+    <!-- ===== Lista de componentes/serviços ===== -->
+    <section id="components" class="card">
+      <div class="card__head">
+        <h2>Components</h2>
+        <span class="muted" id="uptime-window">Uptime dos últimos 90 dias</span>
+      </div>
+
+      <!-- Template de UMA linha de componente. O JS clona isto para cada serviço
+           que chegar pelo stream. Deixe o markup, preencha via SSE. -->
+      <template id="component-row">
+        <div class="component" data-status="operational">
+          <div class="component__main">
+            <span class="component__status-pill"></span>
+            <span class="component__name"></span>
+          </div>
+          <!-- Barrinhas de histórico estilo Cloudflare (90 dias). -->
+          <div class="component__bars" aria-hidden="true"></div>
+          <div class="component__meta">
+            <span class="component__uptime"></span>
+            <span class="component__state-label"></span>
+          </div>
+        </div>
+      </template>
+
+      <!-- Estado inicial estático (placeholder). O JS substitui/atualiza. -->
+      <div id="components-list" class="components-list">
+        <div class="component" data-status="operational">
+          <div class="component__main">
+            <span class="component__status-pill"></span>
+            <span class="component__name">API Gateway</span>
+          </div>
+          <div class="component__bars"></div>
+          <div class="component__meta">
+            <span class="component__uptime">99.98%</span>
+            <span class="component__state-label">Operational</span>
+          </div>
+        </div>
+
+        <div class="component" data-status="degraded">
+          <div class="component__main">
+            <span class="component__status-pill"></span>
+            <span class="component__name">Database Cluster</span>
+          </div>
+          <div class="component__bars"></div>
+          <div class="component__meta">
+            <span class="component__uptime">99.41%</span>
+            <span class="component__state-label">Degraded Performance</span>
+          </div>
+        </div>
+
+        <div class="component" data-status="partial">
+          <div class="component__main">
+            <span class="component__status-pill"></span>
+            <span class="component__name">Object Storage</span>
+          </div>
+          <div class="component__bars"></div>
+          <div class="component__meta">
+            <span class="component__uptime">98.75%</span>
+            <span class="component__state-label">Partial Outage</span>
+          </div>
+        </div>
+
+        <div class="component" data-status="major">
+          <div class="component__main">
+            <span class="component__status-pill"></span>
+            <span class="component__name">Email Delivery</span>
+          </div>
+          <div class="component__bars"></div>
+          <div class="component__meta">
+            <span class="component__uptime">95.10%</span>
+            <span class="component__state-label">Major Outage</span>
+          </div>
+        </div>
+
+        <div class="component" data-status="maintenance">
+          <div class="component__main">
+            <span class="component__status-pill"></span>
+            <span class="component__name">CDN Edge Nodes</span>
+          </div>
+          <div class="component__bars"></div>
+          <div class="component__meta">
+            <span class="component__uptime">—</span>
+            <span class="component__state-label">Under Maintenance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Feed de eventos ao vivo (alimentado pelo SSE) ===== -->
+    <section id="incidents" class="card">
+      <div class="card__head">
+        <h2>Live Event Feed</h2>
+        <span class="muted">via Server-Sent Events</span>
+      </div>
+      <ul id="event-feed" class="event-feed">
+        <li class="event-feed__empty">Aguardando eventos do servidor…</li>
+      </ul>
+    </section>
+
+    <!-- ===== Legenda ===== -->
+    <section class="legend">
+      <span class="legend__item" data-status="operational"><i></i>Operational</span>
+      <span class="legend__item" data-status="degraded"><i></i>Degraded</span>
+      <span class="legend__item" data-status="partial"><i></i>Partial Outage</span>
+      <span class="legend__item" data-status="major"><i></i>Major Outage</span>
+      <span class="legend__item" data-status="maintenance"><i></i>Maintenance</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Healthcheck • estudo de Server-Sent Events com PHP + nginx</p>
+  </footer>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>

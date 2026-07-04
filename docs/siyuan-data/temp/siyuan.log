@@ -133,3 +133,10 @@ I 2026/07/05 00:07:49 manager.go:154: kernel plugins are disabled by configurati
 I 2026/07/05 00:07:49 box.go:77: auto stat [trees=1, blocks=2, dataSize=56.83 kB, assetsSize=0 B]
 I 2026/07/05 00:07:52 cron.go:66: cron job [[RefreshRhyResultJob]] executed
 I 2026/07/05 00:08:04 serve.go:450: serving [/] for user-agent [Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36]
+I 2026/07/05 02:23:30 session.go:153: auth success [ip=172.25.0.1:53888, maxAge=0]
+I 2026/07/05 02:23:30 serve.go:450: serving [/] for user-agent [Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36]
+I 2026/07/05 02:40:11 box.go:77: auto stat [trees=1, blocks=5, dataSize=494.2 kB, assetsSize=434.77 kB]
+I 2026/07/05 02:49:11 index_fix.go:140: start auto fixing index on idle...
+I 2026/07/05 02:49:11 index_fix.go:89: start fixing index...
+I 2026/07/05 02:49:11 index_fix.go:109: finish fixing index
+I 2026/07/05 02:49:11 index_fix.go:142: finish auto fixing index on idle

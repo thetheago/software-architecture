@@ -255,10 +255,10 @@
         "callout": false
       },
       "d3": {
-        "nodeSize": 15,
+        "nodeSize": 16,
         "linkWidth": 8,
         "lineOpacity": 0.36,
-        "centerStrength": 0.01,
+        "centerStrength": 0.015,
         "collideRadius": 600,
         "collideStrength": 0.08,
         "linkDistance": 400,
@@ -325,8 +325,7 @@
                 {
                   "children": [
                     {
-                      "active": true,
-                      "activeTime": "1783181284939",
+                      "activeTime": "1783189799401",
                       "children": {
                         "action": "cb-get-scroll",
                         "blockId": "20260704130658-exvodjj",
@@ -338,7 +337,23 @@
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "Untitled"
+                      "title": "Concept"
+                    },
+                    {
+                      "active": true,
+                      "activeTime": "1783191546044",
+                      "children": {
+                        "action": "cb-get-scroll",
+                        "blockId": "20260704155905-4q0ar60",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20260705000651-5r7iwb4",
+                        "rootId": "20260704155905-4q0ar60"
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "PHP Implementation"
                     }
                   ],
                   "height": "",
@@ -1357,11 +1372,11 @@
   "stat": {
     "treeCount": 1,
     "cTreeCount": 100,
-    "blockCount": 2,
+    "blockCount": 5,
     "cBlockCount": 5000,
-    "dataSize": 56829,
+    "dataSize": 494199,
     "cDataSize": 104857600,
-    "assetsSize": 0,
+    "assetsSize": 434763,
     "cAssetsSize": 104857600
   },
   "api": {
