@@ -1,0 +1,20 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: sse-redis
+    ports:
+      - "6379:6379"
+
+  node:
+    image: node:22-alpine
+    container_name: sse-node
+    working_dir: /app
+    command: sh -c "npm install && npx nodemon index.js"
+    environment:
+      REDIS_URL: redis://redis:6379
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    depends_on:
+      - redis

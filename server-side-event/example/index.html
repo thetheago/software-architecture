@@ -1,0 +1,33 @@
+<!doctype html>
+<meta charset="utf-8" />
+
+<title>SSE + Redis</title>
+
+<h1>Eventos (SSE)</h1>
+
+<div id="log"></div>
+
+<script>
+
+  const eventSource = new EventSource("http://localhost:8080/stream");
+
+  eventSource.onmessage = function(event) {
+    document.getElementById("log").innerHTML = event.data
+  }
+
+
+  // const es = new EventSource("/events");
+
+  // es.onmessage = (e) => {
+
+  // };
+
+  // es.onerror = () => console.log("reconectando...");
+</script>
+
+<!--
+GET /stream HTTP/1.1
+Host: localhost:8080
+Accept: text/event-stream
+Cache-Control: no-cache
+-->
